@@ -1,5 +1,3 @@
--- [] Select the name of the student, their average completion 
--- time, and the average suggested completion time.
 SELECT students.name as student, avg(assignment_submissions.duration) as average_assignment_duration, avg(assignments.duration) as average_estimated_duration
 FROM students
 JOIN assignment_submissions ON student_id = students.id
